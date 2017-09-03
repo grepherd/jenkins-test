@@ -1,3 +1,3 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install gcc g++
+RUN apt-get update && apt-get install -y gcc g++
