@@ -10,11 +10,11 @@
 // }
 
 pipeline {
-    agent { docker 'frolvlad/alpine-gcc' }
+    agent { dockerfile true }
     stages {
         stage('build') {
             steps {
-                sh 'gcc main.cpp'
+                sh 'g++ main.cpp'
             }
         }
     }
